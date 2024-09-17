@@ -71,7 +71,10 @@ button {
 
 /* BASE */
 .body {
-    background-image: linear-gradient(200deg, #654a86, #534292);
+    background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -304,8 +307,7 @@ button {
     overflow-y: scroll;
     overflow-x: hidden;
     /* background-color: #F3F6F8; */
-    background-color: #f7f8f9;
-
+    background-color: rgb(173 255 231);
     scrollbar-color: #979ca0 #dbdfe4; /* Firefox */
     scrollbar-width: thin; /* Firefox */
 }
@@ -668,4 +670,12 @@ button {
     .footer {
         padding: 0 15px;
     }
+}
+.green 
+{
+    border: 2px solid green;
+}
+.red 
+{
+    border: 2px solid red;
 }
